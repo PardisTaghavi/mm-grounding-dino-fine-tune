@@ -38,3 +38,12 @@ In configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscape
 ```bash
 ./tools/dist_train.sh configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscapes_186_fewshot_pretrain_all.py 2
 ```
+## Result
+
+| LR/Scheduler   | MultiStep(weight decay0.01)     | 
+|----------------|---------------------------------|
+| 5e-5           |                                 |
+| 1e-5           |                                 | 
+
+
+
