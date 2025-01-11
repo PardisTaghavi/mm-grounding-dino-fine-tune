@@ -8,13 +8,13 @@ This is just a copy of original repo (https://github.com/open-mmlab/mmdetection/
 Based on https://mmdetection.readthedocs.io/en/latest/get_started.html
 
 ```bash
-apt-get update && apt-get install -y emacs-nox
+apt-get update && apt-get install -y emacs-nox python3-pip
 
-pip install gdown
-
-pip install openmim
+pip install gdown openmim
+pip install torch torchvision
 mim install mmengine 
 mim install "mmcv>=2.0.0"
+mim install mmdet
 ```
 
 ## Artifacts
