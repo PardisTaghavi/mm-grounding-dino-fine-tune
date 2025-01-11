@@ -1,19 +1,40 @@
-This is just a copy of original repo (https://github.com/open-mmlab/mmdetection/tree/main) for personal fine-tuning purposes. Please refer to the original library,
+## Overview
+This is just a copy of original repo (https://github.com/open-mmlab/mmdetection/tree/main) for personal fine-tuning purposes. Please refer to the original library for more details.
 
+## Fine-tuning Few-shot mm-Gdino on Cityscapes Dataset
 
+## Installation
 
+Based on https://mmdetection.readthedocs.io/en/latest/get_started.html
 
-Fine-tuning Few-shot mm-Gdino on Cityscapes Dataset.
+```bash
+apt-get update && apt-get install -y emacs-nox
 
-1) Installation: https://mmdetection.readthedocs.io/en/latest/get_started.html
+pip install gdown
 
-2) Dataset: https://drive.google.com/file/d/143yo4N2guTVst_824xehFqgdHSZAHQbr/view?usp=sharing
-3) Pretrained model: https://drive.google.com/file/d/1Q_DEBxPzcSqOpXvzSpIX0pv68wurrG05/view?usp=sharing
+pip install openmim
+mim install mmengine 
+mim install "mmcv>=2.0.0"
+```
 
-  
-5) change data_root in configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscapes_186_fewshot_pretrain_all.py
-6) change "load_from" path to the pretrined model path.
+## Artifacts
 
-7) ./tools/dist_train.sh configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscapes_186_fewshot_pretrain_all.py 2
+Use gdown to download the artifacts.
 
+Dataset: https://drive.google.com/file/d/143yo4N2guTVst_824xehFqgdHSZAHQbr/view?usp=sharing
+Pretrained model: https://drive.google.com/file/d/1Q_DEBxPzcSqOpXvzSpIX0pv68wurrG05/view?usp=sharing
 
+```bash
+gdown https://drive.google.com/uc?id=143yo4N2guTVst_824xehFqgdHSZAHQbr
+gdown https://drive.google.com/uc?id=1Q_DEBxPzcSqOpXvzSpIX0pv68wurrG05
+```
+
+## Usage  
+In configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscapes_186_fewshot_pretrain_all.py,
+
+1) change "data_root" to the dataset path.
+2) change "load_from" to the pretrained model path.
+
+```bash
+./tools/dist_train.sh configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscapes_186_fewshot_pretrain_all.py 2
+```
