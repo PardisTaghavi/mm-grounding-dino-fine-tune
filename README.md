@@ -21,11 +21,20 @@ mim install mmdet
 
 Use gdown to download the artifacts.
 
+Few-shot Labeled Data
+
 Dataset: https://drive.google.com/file/d/143yo4N2guTVst_824xehFqgdHSZAHQbr/view?usp=sharing
 Pretrained model: https://drive.google.com/file/d/1Q_DEBxPzcSqOpXvzSpIX0pv68wurrG05/view?usp=sharing
 
 ```bash
 gdown https://drive.google.com/uc?id=143yo4N2guTVst_824xehFqgdHSZAHQbr
+gdown https://drive.google.com/uc?id=1Q_DEBxPzcSqOpXvzSpIX0pv68wurrG05
+```
+
+Few-shot Labeled Data + Unlabeled Data
+
+```bash
+gdown TBA
 gdown https://drive.google.com/uc?id=1Q_DEBxPzcSqOpXvzSpIX0pv68wurrG05
 ```
 
@@ -38,12 +47,16 @@ In configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscape
 ```bash
 ./tools/dist_train.sh configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscapes_186_fewshot_pretrain_all.py 2
 ```
-## Result
+## Result - Few shot labeled data (10imgs/cls)
 
 | LR/Scheduler   | MultiStep(weight decay0.01)     | 
 |----------------|---------------------------------|
 | 5e-5           |   AP_{bbox} 53.1                |
 | 1e-5           |   AP_{bbox} 51.5                | 
 
+## Result - Few shot labeled data (10imgs/cls) + unlabeled data(1860 imgs) for self-training
 
+| LR/Scheduler   | MultiStep(weight decay0.01)     | 
+|----------------|---------------------------------|
+| 5e-5           |   AP_{bbox} TBA            |
 
