@@ -34,7 +34,7 @@ gdown https://drive.google.com/uc?id=1Q_DEBxPzcSqOpXvzSpIX0pv68wurrG05
 Few-shot Labeled Data + Unlabeled Data [train THIS!]
 
 ```bash
-gdown https://drive.google.com/file/d/1trqXGRW9aSSVeZUTFFdNP1lYj-leD9Od/view?usp=sharing
+gdown https://drive.google.com/uc?id=1trqXGRW9aSSVeZUTFFdNP1lYj-leD9Od
 gdown https://drive.google.com/uc?id=1Q_DEBxPzcSqOpXvzSpIX0pv68wurrG05
 ```
 
