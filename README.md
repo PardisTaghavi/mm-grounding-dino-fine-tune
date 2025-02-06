@@ -58,5 +58,5 @@ In configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscape
 
 | LR/Scheduler   | MultiStep(weight decay0.01)     | 
 |----------------|---------------------------------|
-| 5e-5           |   AP_{bbox} TBA            |
+| 5e-5           |   AP_{bbox} 54.20               |
 
