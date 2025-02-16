@@ -47,16 +47,36 @@ In configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscape
 ```bash
 ./tools/dist_train.sh configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscapes_186_fewshot_pretrain_all.py 2
 ```
-## Result - Few shot labeled data (10imgs/cls)
+
+# Cityscapes Result
+## Few shot labeled data (10imgs/cls)
 
 | LR/Scheduler   | MultiStep(weight decay0.01)     | 
 |----------------|---------------------------------|
 | 5e-5           |   AP_{bbox} 53.1                |
 | 1e-5           |   AP_{bbox} 51.5                | 
 
-## Result - Few shot labeled data (10imgs/cls) + unlabeled data(1860 imgs) for self-training
+## Few shot labeled data (10imgs/cls) + unlabeled data(1860 imgs) for self-training
 
 | LR/Scheduler   | MultiStep(weight decay0.01)     | 
 |----------------|---------------------------------|
 | 5e-5           |   AP_{bbox} 54.20               |
+
+# Mapillary Result
+## Few shot labeled data (10imgs/cls)
+
+| LR/Scheduler   | MultiStep(weight decay0.01)     | 
+|----------------|---------------------------------|
+| 5e-5           |   AP_{bbox} TBA                |
+| 1e-5           |   AP_{bbox} TBA                | 
+
+## Few shot labeled data (10imgs/cls) + unlabeled data(1860 imgs) for self-training
+
+| LR/Scheduler   | MultiStep(weight decay0.01)     | 
+|----------------|---------------------------------|
+| 5e-5           |   AP_{bbox} TBA               |
+
+
+
+
 
