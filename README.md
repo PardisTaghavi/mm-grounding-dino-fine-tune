@@ -62,7 +62,8 @@ In configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscape
 |----------------|---------------------------------|
 | 5e-5           |   AP_{bbox} 54.20               |
 
-# Mapillary Result
+#############################################333
+# ADE20k Result
 ## Few shot labeled data (10imgs/cls)
 
 | LR/Scheduler   | MultiStep(weight decay0.01)     | 
@@ -76,19 +77,6 @@ In configs/mm_grounding_dino/cityscapes/grounding_dino_swin-l_finetune_cityscape
 |----------------|---------------------------------|
 | 5e-5           |   AP_{bbox} TBA               |
 
-# NYUv2 Result
-## Few shot labeled data (10imgs/cls)
-
-| LR/Scheduler   | MultiStep(weight decay0.01)     | 
-|----------------|---------------------------------|
-| 5e-5           |   AP_{bbox} TBA                |
-| 1e-5           |   AP_{bbox} TBA                | 
-
-## Few shot labeled data (10imgs/cls) + unlabeled data(1860 imgs) for self-training
-
-| LR/Scheduler   | MultiStep(weight decay0.01)     | 
-|----------------|---------------------------------|
-| 5e-5           |   AP_{bbox} TBA               |
 
 
 
